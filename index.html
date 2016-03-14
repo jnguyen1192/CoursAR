@@ -145,7 +145,7 @@ git push</code></pre>
 				
 					<section>
 					<h2>Installation pour le développement</h2>
-					installer  <a href="https://nodejs.org/">node.js</a>
+					installer  <a href="https://nodejs.org/">node.js</a> puis:
 <pre><code data-trim contenteditable>
 npm install -g cordova ionic
 ionic start NomDuProjet sidemenu (choix du modèle: sidemenu ou tabs ou blank)
@@ -160,8 +160,8 @@ ionic serve
 ionic platform add android
 ionic build android
 ionic run android
-(remplacer android par ios si plateforme iOS)
-</code></pre>							
+</code></pre>	
+<p>Remplacer android par ios si plateforme iOS</p>						
 					</section>	
 					<section>
 					<h2>Ajout sur Play store</h2>
@@ -190,18 +190,29 @@ ionic start NomApplication https://github.com/nomutilisateur/CoursAR
 </code></pre>					
 Modifier id, version, etc dans config.xml
 <pre><code data-trim contenteditable>
-<?xml version='1.0' encoding='utf-8'?>
-<widget defaultlocale="fr-FR" id="fr.domaine.coursar" 
-version="0.1.160314"...>
+id="fr.domaine.coursar"
 </code></pre>	
 					</section>	
 					<section>
+					<h2>Option Visual Studio 2015</h2>	
+						<p>
+							Installer vs2015 update 1 et cordova tools (30Go!)
+							Installer ionic templates pour vs2015
+						</p>			
+					</section>	
+					<section>
 					<h2>Support de la camera</h2>	
-									
+						<p>
+							Installer le plugin Cordova camera et media-capture.
+							Ajouter un canvas 2D pour afficher la camera
+							Tester sur le device Android/iOs
+							
+						</p>			
 					</section>	
 					<section>
 					<h2>Support du gyroscope</h2>	
-									
+							Installer le plugin Cordova Device Motion
+							https://cordova.apache.org/plugins/		
 					</section>	
 					<section>
 					<h2>Ajout ThreeJS</h2>	
